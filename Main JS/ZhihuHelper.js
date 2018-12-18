@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         ZhihuHelper
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  A real "helper" amony Zhihu
 // @author       You
 // @match        https://*.zhihu.com/*
 // @grant        none
+// @require http://code.jquery.com/jquery-3.3.1.min.js
 // ==/UserScript==
 
 function AddPersonalStyle() {
@@ -30,8 +31,19 @@ function AddControlBtn(){
     var ctlBtn = document.createElement("button");
     ctlBtn.setAttribute("id", "mainCtlBtn");
     ctlBtn.setAttribute("class", "btnFloatCorner");
-    var btnText = document.createTextNode("Origional Site");
+    var btnText = document.createTextNode("ShowPic");
     ctlBtn.appendChild(btnText);
     document.body.appendChild(ctlBtn);
 }
 AddControlBtn();
+
+/*******************************Below is functions********************************** */
+$("#mainCtlBtn").on("click", function (){
+    var styleElement = document.getElementById("myStyle");
+    console.log(styleElement.sheet.cssRules[1].style.display);
+    if(styleElement.sheet.cssRules[1].style.display == "none"){
+        styleElement.sheet.cssRules[1].style.display = "block";
+    }else{
+        styleElement.sheet.cssRules[1].style.display = "none";
+    }
+});

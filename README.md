@@ -6,7 +6,8 @@ Help simplify Zhihu
 2. Title font-weight lighter
 3. Block right-bar
 4. Delete title img
+5. Control the display of img
 
 # Plan
-1. And button to control the image display
-
+1. Show the "Show less" button of Zhihu
+2. Expend the text dom

@@ -10,4 +10,4 @@ Help simplify Zhihu
 
 # Plan
 1. Show the "Show less" button of Zhihu
-
+2. Expend the text dom

@@ -32,7 +32,8 @@ function AddPersonalStyle() {
     myStyle.sheet.insertRule('.VoteButton {background: #FFF; color: #000;}',8);
     myStyle.sheet.insertRule('.TopstoryItem--advertCard{display:none}',9);
     myStyle.sheet.insertRule('svg{display:none}',10);
-    myStyle.sheet.insertRule('.ContentItem-more{float:right}', 11)
+    myStyle.sheet.insertRule('.ContentItem-more{float:right}', 11);
+    myStyle.sheet.insertRule('.Topstory-container{width:80%}',12);
 }
 AddPersonalStyle();
 

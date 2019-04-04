@@ -24,6 +24,7 @@ function AddPersonalStyle() {
     myStyle.sheet.insertRule('figure{display:none}',1);
     myStyle.sheet.insertRule('.ContentItem-title{font-size:15px;font-weight:400}',2);
     myStyle.sheet.insertRule('.RichContent-cover{display:none}',3);
+    myStyle.sheet.insertRule('.ArticleItem-image{display:none}',13);
     //Buttons at the article bottom
     myStyle.sheet.insertRule('.Button--withIcon{display:none}',4);
     myStyle.sheet.insertRule('.Sticky div a svg{display:none}',5);
